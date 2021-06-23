@@ -19,6 +19,7 @@ npm install react-router-dom
 * React에서 페이지를 이동할 수 있는 이유는 react-router-dom을 이용하여 페이지 기록을 알 수 있기 때문이다
 * history는 브라우저 세션 기록에 접근할 수 있는 방법을 제공하는 인터페이스이다
 * history의 push() 메소드를 이용하면 이동할 페이지 path와 넘겨줄 state 값을 props로 넘겨줄 수 있다
+
 `import 문`
 ```
 import { useHistory } from 'react-router-dom';
@@ -34,6 +35,7 @@ history.push(path, [state]);
 * useLocation Hook은 현재 URL을 대표하는 location 객체를 반환한다
 * URL이 바뀔때마다 새로운 location이 반환되는 useState와 비슷한 기능을 가진다
 * useHistory에서 넘겨받은 state 값을 사용할 수 있다
+
 `import 문`
 ```
 import { useLocation } from 'react-router-dom';
@@ -46,6 +48,7 @@ let content = location.state.필드명;
 
 3. useParams
 * useParams Hook은 URL 매개변수의 key-value 객체를 반환한다
+
 `import 문`
 ```
 import { useParams } from 'react-router-dom';
@@ -68,6 +71,7 @@ let title = params.title;
 * 인자로 Route 컴포넌트의 프로퍼티들을 가진 객체를 받을 수 있다
 * 만약 path 프로퍼티와 현재 페이지의 URL이 일치한 경우 해당 path의 match 객체를 반환하고 일치하지 않을 경우 null을 반환한다
 * match 객체는 어떤 Route에 매칭이 되었는지에 대한 정보가 있고 params(/about/:name) 형식의 정보를 가지고 있다
+
 `import 문`
 ```
 import { useRouteMatch } from "react-router-dom";
