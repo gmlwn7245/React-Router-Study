@@ -91,7 +91,6 @@ function BlogPost() {
 }
 ```
 `useRouteMatch 사용`
-`기존 사용 방법`
 ```
 function BlogPost() {
   let match = useRouteMatch("/blog/:slug");
